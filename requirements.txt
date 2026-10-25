@@ -1,3 +1,4 @@
-WPP_Whatsapp
-playwright
+flask
+gunicorn
+requests
 google-generativeai
