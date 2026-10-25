@@ -22,7 +22,7 @@ def on_message(message):
 
 if __name__ == '__main__':
     print("Starting WhatsApp Bot...")
-    creator = Create(session='ai_autoresponder')
+    creator = Create(session='ai_autoresponder', headless=True)
     client = creator.start()
     client.on_message(on_message)
     client.start()
