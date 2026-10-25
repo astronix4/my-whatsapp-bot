@@ -1,0 +1,3 @@
+WPPConnect
+google-generativeai
+asyncio
