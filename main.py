@@ -1,10 +1,10 @@
+import os
 import asyncio
 from WPP_Whatsapp import Create
 import google.generativeai as genai
-
-GEMINI_API_KEY = "AQ.Ab8RN6KZPKkbLDx9PPZ0oP9KhPUxqd6_gFmd4YcqXJtgixiEqw"
+GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 def on_message(message):
     if message.get('type') == 'chat' and not message.get('isGroupMsg'):
